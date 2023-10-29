@@ -1,0 +1,18 @@
+\documentclass{subfiles}
+
+\begin{document}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|ccc|}
+        \textbf{Folienbereich} & \textbf{Aufgaben} & \textbf{Zeit} \\
+        \hline\hline
+        \pgfmathparse{\Kapitelseiten[0]}\pgfmathresult & \pgfmathparse{\Aufgaben[0]}\pgfmathresult & \pgfmathparse{\Zeiten[0]}\pgfmathresult
+    \end{tabular}
+\end{table}
+In diesem Kapitel beschäftigen wir uns mit der \emph{Software}, mit welcher \LaTeX{}-Code formuliert werden kann. Hier bieten wir primär \emph{TeXStudio} oder \emph{Visual Studio Code} als lokale Lösungen und \emph{Overleaf} als Cloudlösung an. Wir wollen jedoch auf weitere Software wie \emph{texifier} (ehem. TeXPad, macOS) oder einfache Texteditoren wie \emph{Notepad++} (Windows) oder \emph{VIM}, \emph{Nano} bzw. \emph{Emacs} (Linux) hinweisen. \\
+
+Bei der Kompilierung beschäftigen wir uns hauptsächlich mit \emph{pdflatex}. \\
+
+Für den Grundaufbau eines \LaTeX{} Dokumentes schauen wir uns die eine grundlagende Struktur an:
+\lstinputlisting[language=TeX]{../Inhalte/Konzepte/Beispiel.tex}
+\end{document}

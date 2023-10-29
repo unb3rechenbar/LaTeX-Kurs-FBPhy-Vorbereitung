@@ -1,0 +1,16 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|ccc|}
+            \textbf{Folienbereich} & \textbf{Aufgaben} & \textbf{Zeit} \\
+            \hline\hline
+            \pgfmathparse{\Kapitelseiten[8]}\pgfmathresult & \pgfmathparse{\Aufgaben[8]}\pgfmathresult & \pgfmathparse{\Zeiten[8]}\pgfmathresult
+        \end{tabular}
+    \end{table}
+
+    Bei dem Schreiben von Hausarbeiten oder Berichten ist es notwendig, verwendete Literatur zu kennzeichnen. Hierzu lernen wir die \LaTeX{} Umgebung \emph{BibTeX} kennen, um Literatur zu verwalten und in einem Literaturverzeichnis aufzulisten. Für die Zitierung in einem Fließtext werden wir den \emph{cite} Befehl kennenlernen. \\
+
+    Optional betrachten wir die Möglichkeit des \emph{manuellen Literaturverzeichnisses} mithilfe von \emph{thebibliography}.
+\end{document}

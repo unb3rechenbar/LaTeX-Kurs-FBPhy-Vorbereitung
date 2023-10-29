@@ -1,0 +1,93 @@
+\documentclass{article}
+
+\usepackage{kern}
+
+\geometry{
+    a4paper, 
+    twoside=true, 
+    bindingoffset=1.0471975512cm, 
+    left=3.5cm, 
+    right=3.5cm, 
+    top=3.5cm, 
+    bottom=3.5cm
+}
+
+%% ---- Variablendeklarationen ---- %%
+
+\def\Projektname{Vorbereitungskurs \LaTeX{}}
+\def\Projektautoren{Tom Folgmann, \\Arto Steffan}
+\def\Projektstart{07.11.2023}
+\def\Projektende{28.11.2023}
+
+\def\GitLink{}
+
+%% ---- Kopf und Fußzeilensetzung ---- %%
+\chead{\textit{\Projektautoren{}}}
+\ofoot{\Projektname{}\\\Projektkategorie{}}
+\ihead{\Projektstart{} bis \Projektende{}}
+\cfoot{\GitLink{}}
+
+
+%% ---- Variablen ---- %%
+\def\Kapitelseiten{{
+    "1-18",
+    "19-42",
+    "43-79",
+    "80-96",
+    "97-104",
+    "105-107",
+    "108-115",
+    "116-134",
+    "135-143",
+    "144-170",
+    "171-211",
+    "212-247"
+}}
+\def\Aufgaben{{
+    "0",
+    "10",
+    "15",
+    "4",
+    "2",
+    "0",
+    "1",
+    "1",
+    "2",
+    "0",
+    "0",
+    "0"
+}}
+\def\Zeiten{{
+    "30min",
+    "30min",
+    "60min",
+    "45min",
+    "30min",
+    "15min",
+    "30min",
+    "45min",
+    "30min",
+    "45min",
+    "60min",
+    "30min"
+}}
+
+\title{\Projektname{}}
+\author{\Projektautoren{}}
+\date{\Projektstart{} bis \Projektende{}}
+
+\begin{document}
+    \maketitle
+    \section*{Einleitung und Projektziel}
+        \subfile{Sektionen/Einleitung.tex}
+    \tableofcontents
+
+    \newpage
+    \section{Ablaufplan}
+        \subfile{Sektionen/Ablaufplan.tex}
+
+    \newpage
+    \section{Themenüberblick}
+        \subfile{Sektionen/Themenueberblick.tex}
+
+\end{document}

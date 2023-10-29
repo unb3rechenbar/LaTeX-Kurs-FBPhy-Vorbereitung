@@ -1,0 +1,16 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|ccc|}
+            \textbf{Folienbereich} & \textbf{Aufgaben} & \textbf{Zeit} \\
+            \hline\hline
+            \pgfmathparse{\Kapitelseiten[5]}\pgfmathresult & \pgfmathparse{\Aufgaben[5]}\pgfmathresult & \pgfmathparse{\Zeiten[5]}\pgfmathresult
+        \end{tabular}
+    \end{table}
+
+    Im Kapitel der Positionierung schauen wir uns für \enquore{figure} und \enquote{table} gängigen Optionen zur Ausrichtung im Dokument an. \\
+
+    Optional ist hier das nützliche \emph{minipage} Paket.
+\end{document}

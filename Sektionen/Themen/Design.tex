@@ -1,0 +1,16 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|ccc|}
+            \textbf{Folienbereich} & \textbf{Aufgaben} & \textbf{Zeit} \\
+            \hline\hline
+            \pgfmathparse{\Kapitelseiten[1]}\pgfmathresult & \pgfmathparse{\Aufgaben[1]}\pgfmathresult & \pgfmathparse{\Zeiten[1]}\pgfmathresult
+        \end{tabular}
+    \end{table}
+
+    Hauptbestandteil dieser Sektion ist das grundlegende Schreiben von Textinhalt in ein mithilfe von \emph{pdflatex} kompilierbares Dokument. Hierzu halten wir uns an die obige grundlegende Struktur, ohne weitere Definitionen oder Modifikationen. \\
+
+    Wir konzentrieren uns auf die \emph{Textanpassung}, die \emph{Erzeugung von Absätzen} und \emph{Überschriften}. Da manche Zeichen, wie z.B. \enquote{$\textbackslash$} oder \enquote{$\%$} eine besondere Bedeutung in \LaTeX{} haben, müssen diese besonders erzeugt werden; dies wird ebenfalls von uns behandelt. Wir lernen das \emph{Erzeugen von Inhaltsverzeichnissen} und \emph{einstellen von Abständen} kennen. 
+\end{document}

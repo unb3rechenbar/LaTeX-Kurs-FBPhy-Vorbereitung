@@ -1,0 +1,16 @@
+\documentclass{subfiles}
+
+\begin{document}
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|ccc|}
+            \textbf{Folienbereich} & \textbf{Aufgaben} & \textbf{Zeit} \\
+            \hline\hline
+            \pgfmathparse{\Kapitelseiten[3]}\pgfmathresult & \pgfmathparse{\Aufgaben[3]}\pgfmathresult & \pgfmathparse{\Zeiten[3]}\pgfmathresult
+        \end{tabular}
+    \end{table}
+
+    Das Einbinden von Grafiken wird immer wieder benötigt, wie beispielsweise in einem wissenschaftlichen Bericht. Hierzu ist es wichtig, die nötige \emph{Umgebung} im \LaTeX{} Syntax zu kennen und mit ihren Optionen ihre Optik anzupassen. Konkret heißt dies die \emph{Größenanpassung}, eine \emph{Bildbeschreibung} zu erstellen und im Fließtext auf ein Bild zu \emph{referenzieren}. \\
+
+    Als optionale Erweiterung betrachten wir die Unterumgebung \emph{Subfigures}, um mehrere Bilder in einer Abbildung zu platzieren. Ebenfalls werfen wir einen Blick auf Pakete wie \emph{tikz} und \emph{pgfplots}, um Grafiken direkt in \LaTeX{} zu erstellen.
+\end{document}
