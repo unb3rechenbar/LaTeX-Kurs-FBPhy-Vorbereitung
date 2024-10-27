@@ -1,0 +1,44 @@
+% Beginn des Headers mit documentclass
+\documentclass[bibliography=totocnumbered,ngerman]{scrartcl}
+% scrartcl - Artikelformat der KOMA-Klasse
+% bibliography=totocnumbered - Literaturverzeichnis wird in das Inhaltsverzeichnis aufgenommen
+% ngerman - Für das Dokument wird die Sprache "Deutsch" eingestellt. Damit wird u.a. in SIUnitX die Bereichsangabe mit "bis" statt "to" geschrieben.
+
+% Direkte Angabe von Umlauten im Dokument
+\usepackage[utf8]{inputenc}
+
+% Deutsche Sprachanpassungen
+\usepackage[ngerman]{babel}
+
+% Erweiterung des Mathe-Satzes (u.a. align-Umgebungen)
+\usepackage{amsmath}
+
+% zusätzliche mathematische Symbole (enthält amssymb)
+\usepackage{amsfonts}
+
+% Einbinden von Bildern
+\usepackage{graphicx}
+
+% Positionierung von Bildern, Tabellen, ...
+\usepackage{float}
+
+% Paket für SI-Einheiten
+\usepackage{siunitx}
+\sisetup{locale = DE}
+
+% Literaturverzeichnis
+
+%% Layout des Literaturverzeichnisses
+\usepackage[autostyle]{csquotes}
+\bibliographystyle{ieeetr}
+
+
+% ALTERNATIVE ZU biblatex:
+\usepackage[german]{babelbib}
+
+% Zum Einfügen von URLs (hier benötigt fürs Literaturverzeichnis in Zsh mit babelbib)
+\usepackage{url}
+
+
+% Neuer definierter Befehl für Kapitälchen in Überschriften
+\newcommand{\textSC}[1]{{\normalfont  \textsc{#1}}}

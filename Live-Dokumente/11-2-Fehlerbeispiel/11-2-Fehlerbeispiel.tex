@@ -1,0 +1,44 @@
+\documentclass{article}
+
+% -> FEHLERQUELLE 0: Header vergessen
+%   ~> Lösung: \input{Anhang/Header.tex}
+
+
+% -> FEHLERQUELLE 1: Paket fehlt
+%   ~> Lösung: 
+\usepackage{fehlendes-paket}
+
+\begin{document}
+
+    % -> FEHLERQUELLE 2: Im Command verschrieben
+    \nrba{\frac{1}{2}}  % ~> Lösung: \nbra
+                        %              ^^
+                        
+    % -> FEHLERQUELLE 3: Im Dateipfad verschrieben
+    \includegraphics{Anhg/bild}  % ~> Anhang/bild
+    %                 ^^                 ^^
+
+    % -> FEHLERQUELLE 4: Matheumgebungen fehlen
+    .., wobei der Winkel \alpha zwischen b_1 und $b_2$ liegt. % ~> $\alpha$, $b_2$
+    %                   ^      ^        ^   ^
+
+    % -> FEHLERQUELLE 5: Umgebung nicht geschlossen
+    \begin{itemize}
+        \item Erster Punkt
+        \item Zweiter Punkt
+        % ~> Lösung: \end{itemize} einfügen
+    
+    % -> FEHLERQUELLE 6: Umlaute in Label
+    \label{tab:Übersicht} % ~> Ersetze Ü mit Ue
+
+    % -> FEHLERQUELLE 7: Leerzeile in align-Umgebung
+    \begin{align}
+        1 + 1 &= 2 \\
+        
+    \end{align}
+        % ~> Lösung: Leerzeile entfernen
+
+    
+
+
+\end{document}

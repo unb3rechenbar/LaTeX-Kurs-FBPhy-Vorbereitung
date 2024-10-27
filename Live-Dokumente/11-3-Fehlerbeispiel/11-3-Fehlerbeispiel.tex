@@ -1,0 +1,21 @@
+\documentclass{article}
+
+\usepackage{kern}
+
+\begin{document}
+
+    Ohne diese Gleichung hier konkret zu lösen, wollen wir die Phänomenologie einmal diskutieren. Wir führen zunächst die Abkürzungen des Bohrradius $a_B := 4\pi\epsilon_0\cdot\hbar^2/(m\cdot e^2)$ und der Rydbergkonstante $R_y := \hbar^2/(2\cdot m\cdot a_B)$ ein. Mithilfe der dimensionslosen Länge $\rho = Z\cdot (f_K)_1^*(x)/a_B$ und der dimensionslosen Energie $\eta = \sqrt{-E_{n,l}/R_y}/ Z$ können wir unter Multiplikation mit $1 / (Z^2\cdot R_y)$ die Differentialgleichung umformen zu
+    \[
+        \Bbra{\dv{\rho}}^2 u(\rho) + \frac{2}{\rho}\cdot u(\rho) - \frac{l\cdot(l+1)}{\rho^2}\cdot u(\rho) = \eta\cdot u(\rho).
+    \]
+    Wir betrachten nun zwei Grenzwertprozesse für die Größe $\eta$:
+    \begin{itemize}
+        \item Wird $\rho \to $\infty$, so resultiert asymptotisches Verhalten gegen Null durch Wegfall der Brüche und $u''(\rho) = \eta^2\cdot u(\rho)$, sodaß wir $u(\rho)$ durch die Exponentialfunktion $u(\rho) = \exp(-\eta\cdot\rho)$ approximieren können.
+        \item Für $\rho\to 0$ erhalten wir eine grobe Approximation durch $u''(\rho) \approx l\cdot (l+1)/\rho^2\cdot u(\rho)$ und schätzen ab durch $u(\rho) \approx \rho^{l + 1}$. 
+    \end{itemize}
+    Diese Abschätzungsfaktoren spalten wir von der gesuchten Funktion $u(\rho)$ ab und erhalten 
+    \[
+        u(\rho) = \rho^{l+1}\cdot\exp(-\eta\cdot\rho)\cdot p(\rho).
+    \] 
+
+\end{document}
